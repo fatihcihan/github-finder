@@ -1,8 +1,14 @@
 import Navbar from './components/Navbar';
+import User from './components/User';
 
 function App() {
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+      <div className="container mt-3">
+        <User />      
+      </div>
+    </div>
   );
 }
 
