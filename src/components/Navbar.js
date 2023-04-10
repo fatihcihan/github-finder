@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 export class Navbar extends Component {
     render() {
@@ -14,8 +15,14 @@ export class Navbar extends Component {
 
 // For default props
 Navbar.defaultProps = {
-    icon: "bi bi-github",
+    // icon: "bi bi-github",
     title: "Github Finder"
-}
+};
+
+// Typechecking with PropTypes
+Navbar.propTypes = {
+    icon: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
+};
 
 export default Navbar
