@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import Search from './components/Search';
 import UserList from './components/UserList';
 import React, { Component } from 'react'
 
@@ -25,6 +26,7 @@ export class App extends Component {
     return (
       <div>
         <Navbar />
+        <Search />
         <div className="container mt-3">
           <UserList users={this.state.users} loading={this.state.loading} />
         </div>
